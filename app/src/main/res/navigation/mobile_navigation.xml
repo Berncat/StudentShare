@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="@string/title_search_map"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/listingsFragment"
+        android:name="ie.wit.studentshare.ui.listings.ListingsFragment"
+        android:label="@string/menu_listings"
+        tools:layout="@layout/fragment_listings">
+        <action
+            android:id="@+id/listings_to_detail"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/listings_to_edit"
+            app:destination="@id/addFragment" />
+        <argument
+            android:name="favourites"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="ie.wit.studentshare.ui.add.AddFragment"
+        android:label="@string/menu_add"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/add_to_location"
+            app:destination="@id/locationFragment" />
+        <argument
+            android:name="letting"
+            android:defaultValue="@null"
+            app:argType="ie.wit.studentshare.models.StudentShareModel"
+            app:nullable="true" />
+        <action
+            android:id="@+id/add_to_listings"
+            app:destination="@id/listingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="ie.wit.studentshare.ui.search.SearchFragment"
+        android:label="@string/menu_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/search_to_map"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="ie.wit.studentshare.ui.listings.ListingsFragment"
+        android:label="@string/menu_favourites"
+        tools:layout="@layout/fragment_listings">
+        <action
+            android:id="@+id/favourites_to_detail"
+            app:destination="@id/detailFragment" />
+        <argument
+            android:name="favourites"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ie.wit.studentshare.ui.map.MapFragment"
+        android:label="@string/title_search_map"
+        tools:layout="@layout/fragment_map">
+        <argument
+            android:name="search"
+            app:argType="ie.wit.studentshare.models.InstitutionModel" />
+        <action
+            android:id="@+id/map_to_detail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="ie.wit.studentshare.ui.location.LocationFragment"
+        android:label="@string/title_location"
+        tools:layout="@layout/fragment_location">
+        <action
+            android:id="@+id/location_to_add"
+            app:destination="@id/addFragment" />
+        <argument
+            android:name="letting"
+            android:defaultValue="@null"
+            app:argType="ie.wit.studentshare.models.StudentShareModel"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="ie.wit.studentshare.ui.detail.DetailFragment"
+        android:label="@string/title_details"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="lettingId"
+            app:argType="string" />
+    </fragment>
+</navigation>
