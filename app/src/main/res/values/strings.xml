@@ -1,0 +1,84 @@
+<resources>
+    <!-- MAIN -->
+    <string name="app_name">StudentShare</string>
+    <!-- LOGIN -->
+    <string name="welcome_text">Welcome to StudentShare\nthe number one place to find\nstudent accommodation in Ireland</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_account">Create account</string>
+    <!-- NAVIGATION -->
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">StudentShare</string>
+    <string name="nav_header_subtitle">info@studentshare.ie</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_header_searching">Searching</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_favourites">My favourites</string>
+    <string name="menu_header_sharing">Sharing</string>
+    <string name="menu_add">Add a listing</string>
+    <string name="menu_listings">My listings</string>
+    <string name="menu_header_control">Control</string>
+    <string name="menu_signout">Sign out</string>
+    <string name="title_search_map">Search Map</string>
+    <string name="title_details">Details</string>
+    <string name="title_location">Set the location</string>
+    <!-- FRAGMENTS -->
+    <!-- SEARCH -->
+    <string name="search_text">Search</string>
+    <string name="search_institution">Select Institution:</string>
+    <string name="search_radius">Select Radius:</string>
+    <string-array name="search_distance">
+        <item>1km</item>
+        <item>2km</item>
+        <item>3km</item>
+        <item>4km</item>
+        <item>5km</item>
+        <item>10km</item>
+        <item>15km</item>
+        <item>20km</item>
+        <item>25km</item>
+        <item>30km</item>
+        <item>40km</item>
+        <item>50km</item>
+    </string-array>
+    <!-- ADD -->
+    <string name="hint_street">Street/Area</string>
+    <string name="hint_cost">Cost per month</string>
+    <string name="hint_details">Other details...</string>
+    <string name="hint_phone">Phone</string>
+    <string name="create_add">Add share</string>
+    <string name="create_location">Add location</string>
+
+
+    <!-- START Firebase Resources-->
+
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Please Login Below</string>
+
+    <string name="select_profile_image">Select Profile Image</string>
+
+
+
+
+
+
+</resources>
