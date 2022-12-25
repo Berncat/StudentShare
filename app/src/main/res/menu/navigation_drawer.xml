@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/menu_header_searching">
+        <menu>
+            <item
+                android:id="@+id/searchFragment"
+                android:checkable="true"
+                android:icon="@drawable/ic_menu_search"
+                android:title="@string/menu_search" />
+            <item
+                android:id="@+id/favouritesFragment"
+                android:checkable="true"
+                android:icon="@drawable/ic_menu_favourites"
+                android:title="@string/menu_favourites" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_header_sharing">
+        <menu>
+            <item
+                android:id="@+id/addFragment"
+                android:checkable="true"
+                android:icon="@drawable/ic_menu_add"
+                android:title="@string/menu_add" />
+            <item
+                android:id="@+id/listingsFragment"
+                android:checkable="true"
+                android:icon="@drawable/ic_menu_listings"
+                android:title="@string/menu_listings" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_header_control">
+        <menu>
+            <item
+                android:id="@+id/signout"
+                android:icon="@drawable/ic_menu_signout"
+                android:onClick="signOut"
+                android:title="@string/sign_out" />
+        </menu>
+    </item>
+</menu>
